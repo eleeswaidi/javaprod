@@ -1,0 +1,12 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+#GroupBox{-fx-border-color: black; -fx-border-width: 4;}
+#TitreAuthentification{ -fx-fill: #44CCC0; background: #ffffff}
+#BackTextGroupBox{-fx-background-color: #ffffff;}
+#deconnexion{-fx-background-color:red}

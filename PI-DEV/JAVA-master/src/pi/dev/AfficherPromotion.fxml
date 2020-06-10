@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.dev.AfficherPromotionController">
+   <children>
+      <ImageView fitHeight="372.0" fitWidth="665.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/téléchargement.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-2.0" prefHeight="372.0" prefWidth="663.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="59.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/icons8-update-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="59.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/delete.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table" layoutX="114.0" layoutY="105.0" prefHeight="200.0" prefWidth="482.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Numero" />
+                <TableColumn fx:id="dated" prefWidth="104.0" text="Date Début" />
+                  <TableColumn fx:id="datef" prefWidth="92.0" text="Date Fin" />
+                  <TableColumn fx:id="valeur" prefWidth="93.0" text="Valeur" />
+                  <TableColumn fx:id="Produit" prefWidth="117.0" text="Produit" />
+              </columns>
+            </TableView>
+            <Label layoutX="204.0" layoutY="44.0" prefHeight="40.0" prefWidth="287.0" text="Liste des Promotions">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="50.0" layoutY="174.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: Transparent;" />
+            <Button layoutX="50.0" layoutY="219.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: Transparent;" />
+            <Button layoutX="459.0" layoutY="318.0" mnemonicParsing="false" onAction="#Produit" style="-fx-background-color: black;" text="Liste des produits" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Label layoutX="-68.0" layoutY="56.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PI-DEV.jnlp">
+  <information>
+    <title>PI-DEV</title>
+    <vendor>Ach</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PI-DEV.jar" size="210526" download="eager" />
+    <jar href="lib\JFoenix.jar" size="2708772" download="eager" />
+    <jar href="lib\Mailing.jar" size="521000" download="eager" />
+    <jar href="lib\MySQL Connector JDBC.jar" size="1006959" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PI-DEV" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pi.dev.HomePage"  name="PI-DEV" />
+  <update check="always"/>
+</jnlp>

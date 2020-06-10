@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.dev.ModifierPromotionController">
+   <children>
+      <Pane layoutY="-5.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="488.0" fitWidth="713.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/téléchargement.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="155.0" layoutY="43.0" prefHeight="39.0" prefWidth="250.0" text="Modifier Promotion">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dated" layoutX="193.0" layoutY="126.0" />
+            <DatePicker fx:id="datef" layoutX="193.0" layoutY="188.0" />
+            <TextField fx:id="valeur" layoutX="193.0" layoutY="254.0" prefHeight="25.0" prefWidth="174.0" />
+            <Label layoutX="84.0" layoutY="130.0" prefHeight="17.0" prefWidth="76.0" text="Date debut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="84.0" layoutY="192.0" prefHeight="17.0" prefWidth="59.0" text="Date Fin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="84.0" layoutY="258.0" prefHeight="17.0" prefWidth="42.0" text="Valeur" textFill="WHITE" />
+            <Button layoutX="254.0" layoutY="322.0" mnemonicParsing="false" onAction="#Modifier" style="-fx-background-color: black;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label layoutX="405.0" layoutY="184.0" prefHeight="17.0" prefWidth="76.0" text="Produit :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="prod" layoutX="494.0" layoutY="179.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
